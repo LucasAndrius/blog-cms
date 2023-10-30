@@ -2,3 +2,39 @@
     margin-top: 5rem;
     margin-bottom: 5rem;
 }
+.container h2{
+    text-align: center;
+    margin-bottom: 2rem;
+}
+.cards{
+    display:flex;
+    justify-content:space-between;
+}
+
+.card{
+    height:350px;
+    width: 20vw;
+
+    color:#e5e5e5;
+}
+
+.cardTitle{
+    text-align: center;
+    font-weight:600;
+    background-color: #000000;
+    padding-top:0.5rem;
+    padding-bottom:0.5rem;
+    margin-bottom: 1px;
+    border-top-left-radius: 1rem;
+    border-top-right-radius: 1rem;
+}
+
+.cardDetails{
+    height:250px;
+    display:flex;
+    flex-direction: column;
+    background-color: #000000;
+    padding:0 2rem;
+    padding-top:2rem;
+
+}

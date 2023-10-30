@@ -1,5 +1,5 @@
 .sectionBlack{
-    background-color:#111;
+    background-color:#000000;
     color:white;
     padding:2rem;
 }
@@ -24,12 +24,7 @@
     margin-top:0;
 }
 
-.containerInfo a{
-    padding: 0.5rem;
 
-    max-width:3rem;
-    background-color: #fff;
-}
 .except{
     min-height: 20vh;
 }

@@ -9,9 +9,7 @@ type Props = {
 
 export const Button = (props: Props) =>{
     return(
-        <Link 
-            href={props.link} 
-            className={styles.link}>
+        <Link href={props.link} className={styles.link}>
             {props.label}
         </Link>
     )

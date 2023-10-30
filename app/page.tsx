@@ -1,13 +1,11 @@
-import { documentToReactComponents } from "@contentful/rich-text-react-renderer";
 import Image from "next/image";
 import styles from "../styles/Home.module.css"
-import Link from "next/link";
 import { Welcome } from "@/components/Welcome";
-import { AskQuot } from "@/components/AskQuot";
 import { Plans } from "@/components/Plans";
+import { Button } from "@/components/Button";
 
 
-async function getBlogs() {
+async function getBlogPosts() {
   const res = await fetch(`https://cdn.contentful.com/spaces/${process.env.CONTENTFUL_SPACE_ID}/entries?access_token=${process.env.CONTENTFUL_ACCESS_KEY}&content_type=post&order=-sys.createdAt`);
   
   // Recommendation: handle errors
@@ -21,7 +19,7 @@ async function getBlogs() {
 
 export default async function Home() {
   
-  const blogs = await getBlogs();
+  const blogs = await getBlogPosts();
 
 
   // Verifica se há itens no array
@@ -60,7 +58,7 @@ export default async function Home() {
             <h4>{latestPost.fields.title}</h4>
             <p className={styles.except}>{latestPost.fields.except}</p>
             <p>Autor: {author.fields.name}</p>
-            <Link href={`/blog/$slug`}>mais...</Link>
+            <Button link={`/blog/$slug`} label="mais.."/>
           </div>
         </div>
       </div>
