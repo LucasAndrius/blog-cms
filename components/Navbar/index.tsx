@@ -1,6 +1,7 @@
 import { navigationsLinks } from '@/utils/data'
 import styles from './Navbar.module.css'
 import Link from 'next/link'
+import Image from 'next/image'
 
 export const Navbar = () => {
     return (
@@ -8,7 +9,7 @@ export const Navbar = () => {
             <header className={styles.header}>
                 <div>
                 <h1 className={styles.title}>Site...</h1>
-                <img src="" alt="imagem..." />
+                <Image src="" alt="imagem..." />
                 </div>
             </header>
             <ul className={styles.navLinks}>
