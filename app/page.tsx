@@ -2,7 +2,9 @@ import { documentToReactComponents } from "@contentful/rich-text-react-renderer"
 import Image from "next/image";
 import styles from "../styles/Home.module.css"
 import Link from "next/link";
-import { Budget } from "@/components/Budget";
+import { Welcome } from "@/components/Welcome";
+import { AskQuot } from "@/components/AskQuot";
+import { Plans } from "@/components/Plans";
 
 
 async function getBlogs() {
@@ -40,6 +42,7 @@ export default async function Home() {
 
   return (
     <main>
+      <Welcome/>
       <div className={styles.sectionBlack}>
       <h2 className={styles.titleH2}>Última publicação</h2>
         <div key={latestPost.sys.id} className={styles.containerBlog}>
@@ -61,8 +64,7 @@ export default async function Home() {
           </div>
         </div>
       </div>
-      outro conteúdo
-      <Budget/>
+      <Plans/>
     </main>
   )
 }

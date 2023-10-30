@@ -2,7 +2,7 @@
 export default function Dashboard() {
     return (
       <main >
-       <div>bashboard</div>
+        <div>bashboard</div>
       </main>
     )
   }

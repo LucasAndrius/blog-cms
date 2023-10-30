@@ -1,0 +1,16 @@
+.container{
+    display:flex;
+    margin-top:5rem;
+    margin-bottom:5rem;
+}
+
+.leftCard{
+    width:50vw;
+    text-align: justify;
+}
+
+.rightCard{
+    width:50vw;
+    display: inherit;
+    justify-content: end;
+}
