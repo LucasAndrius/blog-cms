@@ -9,7 +9,6 @@ export const Navbar = () => {
             <header className={styles.header}>
                 <div>
                 <h1 className={styles.title}>Site...</h1>
-                <Image src="" alt="imagem..." />
                 </div>
             </header>
             <ul className={styles.navLinks}>
